@@ -16,3 +16,12 @@ function coffeeGrams(weight) {
 
     return weight * strength;
 }
+
+var coffeeResults = document.getElementById('coffee-results');
+var brewWeight = document.getElementById('brew-weight').value;
+
+
+coffeeResults.addEventListener('click', () => {
+    results = brewWeight * 16;
+    console.log(results)
+});
